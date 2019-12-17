@@ -1,0 +1,20 @@
+# decimal_to_binary
+# Purpose:      Takes in a number, and returns that number represented in binary.
+
+# Get the number to convert
+LET decimalNumber
+INPUT decimalNumber
+
+# Set up variables
+LET workspace
+
+# Begin
+DO
+
+SET workspace decimalNumber     # workspace = decimalNumber
+MOD workspace 2                 # workspace %= 2
+PRINT workspace
+
+DIV decimalNumber 2             # decimalNumber /= 2
+
+WHILE_NEQ decimalNumber 0

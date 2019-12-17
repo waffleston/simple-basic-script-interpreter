@@ -1,0 +1,19 @@
+# power_of_two
+# Purpose:      Takes in a number greater than 0, and prints out 2 to the power of that number
+
+# Get the power to exponentiate to
+LET power
+INPUT power
+
+# Set up variables
+LET resultant 1
+
+# Begin
+DO
+
+MUL resultant 2         # resultant *= 2
+SUB power 1             # power -= 1
+
+WHILE_NEQ power 0
+
+PRINT resultant

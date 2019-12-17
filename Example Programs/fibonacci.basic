@@ -1,0 +1,25 @@
+# fibonacci
+# Returns the fibonacci sequence to the provided number of iterations.
+
+# Get the number of digits to display
+LET numberOfDigits
+INPUT numberOfDigits
+
+# Set up variables
+LET f 0
+LET g 1
+LET xchange
+
+# Begin
+DO
+
+PRINT f
+
+ADD f g                 # f += g
+SET xchange f           # xchange = f
+SUB xchange g           # xchange -= g
+SET g xchange           # g = xchange
+
+SUB numberOfDigits 1    # numberOfDigits -= 1
+
+WHILE_NEQ numberOfDigits 0
